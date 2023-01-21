@@ -1,0 +1,48 @@
+create database crudAlumnos
+
+USE crudAlumnos
+create table Alumnos(
+id_alumno int identity (1,1),
+nombre varchar (25),
+edad int,
+email varchar(100),
+fecha_nacimiento date)
+--LOAD ALL ALUMNOS
+create procedure sp_load
+as begin
+select * from  Alumnos
+end
+
+--CRUD CREATE, READ, UPDATE, DELETE
+--CREATE
+create procedure sp_create
+@nombre varchar (25),
+@edad int,
+@email varchar(100),
+@fecha_nacimiento date
+as begin
+insert into Alumnos values (@nombre,@edad, @email, @fecha_nacimiento)
+end
+--READ
+create procedure sp_read
+@id int
+as begin
+select * from Alumnos where id_alumno=@id
+end
+--UPDATE
+create procedure sp_update
+@id int,
+@nombre varchar (25),
+@edad int,
+@email varchar(100),
+@fecha_nacimiento date
+as begin
+update Alumnos set nombre=@nombre,edad= @edad,email= @email,fecha_nacimiento= @fecha_nacimiento
+where id_alumno= @id
+end
+--DELETE
+create procedure sp_delete
+@id int
+as begin
+delete from Alumnos where id_alumno=@id
+end

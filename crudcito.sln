@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crudcito", "crudcito\crudcito.csproj", "{975EFF2E-7535-4191-8EA4-EA716AD2AB64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{975EFF2E-7535-4191-8EA4-EA716AD2AB64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975EFF2E-7535-4191-8EA4-EA716AD2AB64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975EFF2E-7535-4191-8EA4-EA716AD2AB64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975EFF2E-7535-4191-8EA4-EA716AD2AB64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A842D25-3597-464B-98BE-72936BDB361D}
+	EndGlobalSection
+EndGlobal
